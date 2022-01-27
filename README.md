@@ -20,4 +20,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 [![MIT Logo](https://img.shields.io/github/license/rocketseat/youtube-challenge-electron-tray?color=%237159c1&logo=mit "MIT License")]("https://opensource.org/licenses/MIT")
 
-$$\text{Raphael F. - Hawks}$$
+- By Raphael F. - Hawks
