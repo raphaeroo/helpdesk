@@ -1,15 +1,19 @@
-import React, { useRef } from 'react';
-import { BottomSheetView, BottomSheetModal, BottomSheetModalProvider } from '@gorhom/bottom-sheet';
+import React, { useRef } from 'react'
+import {
+  BottomSheetView,
+  BottomSheetModal,
+  BottomSheetModalProvider
+} from '@gorhom/bottom-sheet'
 
-import { Background } from './styles';
-import { Button } from '@components/Controllers/Button';
-import { OrderForm } from '@components/Forms/OrderForm';
+import { Button } from '@components/Controllers/Button'
+import { OrderForm } from '@components/Forms/OrderForm'
+import { Background } from './styles'
 
 export function NewOrder() {
-  const bottomSheetRef = useRef<BottomSheetModal>(null);
+  const bottomSheetRef = useRef<BottomSheetModal>(null)
 
   function handleSnapPress() {
-    bottomSheetRef.current?.present();
+    bottomSheetRef.current?.present()
   }
 
   return (
@@ -22,13 +26,12 @@ export function NewOrder() {
           snapPoints={['50%']}
           style={{ padding: 24 }}
           enablePanDownToClose={true}
-          backdropComponent={() => <Background />}
-        >
+          backdropComponent={() => <Background />}>
           <BottomSheetView>
             <OrderForm />
           </BottomSheetView>
         </BottomSheetModal>
       </BottomSheetModalProvider>
     </>
-  );
+  )
 }

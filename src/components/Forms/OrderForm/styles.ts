@@ -1,8 +1,8 @@
-import styled from 'styled-components/native';
+import styled from 'styled-components/native'
 
 export const Form = styled.View`
   width: 100%;
-`;
+`
 
 export const Title = styled.Text`
   font-size: 24px;
@@ -10,4 +10,4 @@ export const Title = styled.Text`
   color: ${({ theme }) => theme.COLORS.TEXT};
   margin-bottom: 24px;
   align-self: center;
-`;
+`

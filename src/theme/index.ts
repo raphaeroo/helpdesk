@@ -14,6 +14,6 @@ export default {
 
   FONTS: {
     TITLE: 'Inter_700Bold',
-    TEXT: 'Inter_400Regular',
-  },
-};
+    TEXT: 'Inter_400Regular'
+  }
+}

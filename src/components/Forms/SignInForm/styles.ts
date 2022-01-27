@@ -1,6 +1,6 @@
-import styled from 'styled-components/native';
+import styled from 'styled-components/native'
 
-export const Form = styled.View``;
+export const Form = styled.View``
 
 export const Title = styled.Text`
   font-size: 32px;
@@ -8,11 +8,11 @@ export const Title = styled.Text`
   align-self: flex-start;
   font-family: ${({ theme }) => theme.FONTS.TITLE};
   color: ${({ theme }) => theme.COLORS.TEXT};
-`;
+`
 
-export const Footer = styled.View`    
+export const Footer = styled.View`
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; 
-  margin-top: 50px; 
-`;
+  align-items: center;
+  margin-top: 50px;
+`

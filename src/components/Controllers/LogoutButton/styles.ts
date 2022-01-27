@@ -1,5 +1,5 @@
-import styled from 'styled-components/native';
-import { RectButton } from 'react-native-gesture-handler';
+import styled from 'styled-components/native'
+import { RectButton } from 'react-native-gesture-handler'
 
 export const Container = styled(RectButton)`
   width: 50px;
@@ -8,4 +8,4 @@ export const Container = styled(RectButton)`
   align-items: center;
   border-radius: 12px;
   background-color: ${({ theme }) => theme.COLORS.PRIMARY};
-`;
+`

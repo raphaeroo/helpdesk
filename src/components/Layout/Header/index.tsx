@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 
-import { LogoutButton } from '@components/Controllers/LogoutButton';
-import { Container, Greeting, Title, SubTitle } from './styles';
+import { LogoutButton } from '@components/Controllers/LogoutButton'
+import { Container, Greeting, Title, SubTitle } from './styles'
 
 export function Header() {
-  function handleSignOut() { }
+  function handleSignOut() {}
 
   return (
     <Container>
@@ -15,5 +15,5 @@ export function Header() {
 
       <LogoutButton onPress={handleSignOut} />
     </Container>
-  );
+  )
 }
