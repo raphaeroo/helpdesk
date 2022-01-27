@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { createRef } from 'react'
 import {
   BottomSheetView,
   BottomSheetModal,
@@ -9,9 +9,9 @@ import { Button } from '@components/Controllers/Button'
 import { OrderForm } from '@components/Forms/OrderForm'
 import { Background } from './styles'
 
-export function NewOrder() {
-  const bottomSheetRef = useRef<BottomSheetModal>(null)
+export const bottomSheetRef = createRef<BottomSheetModal>()
 
+export function NewOrder() {
   function handleSnapPress() {
     bottomSheetRef.current?.present()
   }
