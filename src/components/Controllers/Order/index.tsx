@@ -34,7 +34,7 @@ export function Order({ data }: Props) {
 
       <Content>
         <Header>
-          <Title>Computador Desktop</Title>
+          <Title>{data.description}</Title>
           <MaterialIcons
             name={data.status === 'open' ? 'hourglass-empty' : 'check-circle'}
             size={24}
@@ -47,7 +47,7 @@ export function Order({ data }: Props) {
         <Footer>
           <Info>
             <MaterialIcons name="schedule" size={16} color={theme.COLORS.SUBTEXT} />
-            <Label>20/01/22 às 14h</Label>
+            <Label>None</Label>
           </Info>
 
           <Info>
@@ -56,7 +56,7 @@ export function Order({ data }: Props) {
               size={16}
               color={theme.COLORS.SUBTEXT}
             />
-            <Label>402345</Label>
+            <Label>{data.patrimony}</Label>
           </Info>
         </Footer>
       </Content>
