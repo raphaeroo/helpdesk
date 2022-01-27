@@ -21,7 +21,7 @@ export const SubTitle = styled.Text`
   font-family: ${({ theme }) => theme.FONTS.TEXT};
   color: ${({ theme }) => theme.COLORS.SUBTEXT};
   text-align: center;
-  margin: 12px 0 24px;
+  margin: 50px 12px 12px 12px;
 `
 
 export const BackButton = styled.TouchableOpacity`

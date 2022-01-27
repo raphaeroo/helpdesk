@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native'
 import { useTheme } from 'styled-components/native'
 import { MaterialIcons } from '@expo/vector-icons'
 
-import registerAnimation from '@assets/animations/register.json'
+import signUpAnimation from '@assets/animations/signup.json'
 
 import { Lottie } from '@components/Animations/Lottie'
 
@@ -19,7 +19,7 @@ export function Register() {
     <Container>
       <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
         <Content>
-          <Lottie source={registerAnimation} />
+          <Lottie source={signUpAnimation} />
 
           <SubTitle>Conte conosco, estamos aqui para ajudar.</SubTitle>
           <AccountForm />

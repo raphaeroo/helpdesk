@@ -29,8 +29,16 @@ PODS:
     - React-Core (= 0.64.3)
     - React-jsi (= 0.64.3)
     - ReactCommon/turbomodule/core (= 0.64.3)
+  - Firebase/Auth (8.11.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (~> 8.11.0)
   - Firebase/CoreOnly (8.11.0):
     - FirebaseCore (= 8.11.0)
+  - FirebaseAuth (8.11.0):
+    - FirebaseCore (~> 8.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
+    - GoogleUtilities/Environment (~> 7.7)
+    - GTMSessionFetcher/Core (~> 1.5)
   - FirebaseCore (8.11.0):
     - FirebaseCoreDiagnostics (~> 8.0)
     - GoogleUtilities/Environment (~> 7.7)
@@ -45,10 +53,22 @@ PODS:
     - GoogleUtilities/Environment (~> 7.2)
     - nanopb (~> 2.30908.0)
     - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/AppDelegateSwizzler (7.7.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
   - GoogleUtilities/Environment (7.7.0):
     - PromisesObjC (< 3.0, >= 1.2)
   - GoogleUtilities/Logger (7.7.0):
     - GoogleUtilities/Environment
+  - GoogleUtilities/Network (7.7.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.7.0)"
+  - GoogleUtilities/Reachability (7.7.0):
+    - GoogleUtilities/Logger
+  - GTMSessionFetcher/Core (1.7.0)
   - lottie-ios (3.2.3)
   - lottie-react-native (5.0.1):
     - lottie-ios (~> 3.2.3)
@@ -321,6 +341,10 @@ PODS:
   - RNFBApp (14.3.0):
     - Firebase/CoreOnly (= 8.11.0)
     - React-Core
+  - RNFBAuth (14.3.0):
+    - Firebase/Auth (= 8.11.0)
+    - React-Core
+    - RNFBApp
   - RNGestureHandler (2.1.1):
     - React-Core
   - RNReanimated (2.3.1):
@@ -398,6 +422,7 @@ DEPENDENCIES:
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - "RNFBApp (from `../node_modules/@react-native-firebase/app`)"
+  - "RNFBAuth (from `../node_modules/@react-native-firebase/auth`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
@@ -407,10 +432,12 @@ SPEC REPOS:
   trunk:
     - boost-for-react-native
     - Firebase
+    - FirebaseAuth
     - FirebaseCore
     - FirebaseCoreDiagnostics
     - GoogleDataTransport
     - GoogleUtilities
+    - GTMSessionFetcher
     - lottie-ios
     - nanopb
     - PromisesObjC
@@ -494,6 +521,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   RNFBApp:
     :path: "../node_modules/@react-native-firebase/app"
+  RNFBAuth:
+    :path: "../node_modules/@react-native-firebase/auth"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
   RNReanimated:
@@ -518,11 +547,13 @@ SPEC CHECKSUMS:
   FBLazyVector: c71c5917ec0ad2de41d5d06a5855f6d5eda06971
   FBReactNativeSpec: ab7fd91d512bff8b462be46e41e1934bacc0afc4
   Firebase: 44dd9724c84df18b486639e874f31436eaa9a20c
+  FirebaseAuth: d96d73aba85d192d7a7aa0b86dd6d7f8ec170b4b
   FirebaseCore: 2f4f85b453cc8fea4bb2b37e370007d2bcafe3f0
   FirebaseCoreDiagnostics: 64d9709d804a6c25bd77841371c1fcfd909d5601
   glog: 73c2498ac6884b13ede40eda8228cb1eee9d9d62
   GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
+  GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
   lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
   lottie-react-native: a029a86e1689c86a07169c520ae770e84348cd20
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
@@ -552,6 +583,7 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: 493d9abb8b23c3f84e19ae221eeba92cadcb70dc
   ReactCommon: 8fea6422328e2fc093e25c9fac67adbcf0f04fb4
   RNFBApp: 16bdf8b75b84631513da3d5f5e2520a436ec9b29
+  RNFBAuth: 7eb50d60c82b4a59018b0c7a1d4afdd1250eff74
   RNGestureHandler: e1ad51d31a580755079d5124d3ab66f0fcaa8311
   RNReanimated: 7f143675d94978c3555345d5bfa8ed6ae800c5d3
   RNScreens: d6da2b9e29cf523832c2542f47bf1287318b1868
